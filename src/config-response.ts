@@ -31,6 +31,7 @@ export function buildConfigResponse(origin: string) {
     communication: null,
     settings: {
       disableUserRegistration: false,
+      suppressOnboardingInterstitials: false,
     },
     _icon_service_url: buildIconServiceTemplate(origin),
     _icon_service_csp: buildIconServiceCsp(origin),
@@ -46,6 +47,7 @@ export function buildConfigResponse(origin: string) {
       'pm-30529-webauthn-related-origins': true,
       'unauth-ui-refresh': true,
       'web-push': false,
+      'windows-native-credential-sync': true,
     },
     object: 'config',
   };
